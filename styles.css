@@ -249,7 +249,7 @@ input:focus:valid ~ .requirements-message {
   opacity: 0;
 }
 
-/* Hide all validation when there's a placeholder and the field is not in focus */
+/* Hide all validation when there's a placeholder */
 input:placeholder-shown ~ .check,
 input:placeholder-shown ~ .cross,
 input:placeholder-shown ~ .requirements-message,
@@ -262,7 +262,7 @@ input:placeholder-shown:valid ~ .requirements-message {
   opacity: 0;
 }
 
-/* footer styles */
+/* Footer styles */
 footer {
   margin-top: 30px;
 }
