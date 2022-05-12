@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+  <title>Sign-Up</title>
+</head>
+<body>
+
+  <div class="content-container">
+    <div class="left-containter">
+    <div class="image-container"></div>
+    </div>
+    
+    <div class="form-container">
+      <div class="headline"><h1>Sign-up today</h1></div>
+      <form action="http://httpbin.org/post" method="post">
+
+        <div>
+          <label for="firstName">First Name:</∂label>
+          <input type="text" name="firstName" id="firstName" placeholder=" " required>
+          <div class="check"></div>
+        </div>
+
+        <div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName" placeholder=" " required>
+          <div class="check"></div>
+          <div class="cross"></div>
+        </div>
+
+        <div>
+          <label for="userEmail">Email:</label>
+          <input type="email" name="userEmail" id="userEmail" placeholder=" " required>
+          <div class="check"></div>
+          <div class="cross"></div>
+        </div>
+
+        <div>
+          <label for="phoneNumber">Phone:</label>
+          <input type="text" name="phoneNumber" id="phoneNumber" placeholder=" " pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required><!--Regex from here https://ihateregex.io/expr/phone/-->
+          <div class="check"></div>
+          <div class="cross"></div>
+        </div>
+
+        <div>
+          <label for="userPassword">Password:</label>
+          <!--Regex from here https://regexr.com/3bfsi-->
+          <input type="password" name="userPassword" id="userPassword" placeholder=" " 
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+          <div class="check"></div>
+          <div class="cross"></div>
+          <div class="show-password">
+            <input type="checkbox" id="showPassword" name="showPassword">
+            <label for="showPassword">Show password</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="userPasswordConfirm">Confirm Password:</label>
+          <input type="password" name="userPasswordConfirm" id="userPasswordConfirm" placeholder=" " required>
+          <div class="check"></div>
+          <div class="cross"></div>
+          <div class="requirements-message">Passwords do not match :(</div>
+        </div>  
+
+        <div class="create-account">
+          <button type="submit">Create account</button>
+          <div class="existing-account">Already have an account? <a href="#">Log in</a></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>MR.ROBOT |•_•| <a href="https://github.com/Mr-Robot-83/calculator" target="_blank">GitHub</a></footer>
+</body>
+</html>
